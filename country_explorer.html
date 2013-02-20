@@ -204,8 +204,12 @@ var countryEssay = "No essay yet";
 
 		
 		}
-else if (chosen == "Pollution")
- {
+		else if (chosen == "GreenhouseGasEmissions") {
+		        clearOverlays();
+			var geocoder = new google.maps.Geocoder();
+			MarkACountry (geocoder, "Russia")
+		}
+                else if (chosen == "Pollution")
 			
 			clearOverlays();
 			
@@ -228,8 +232,7 @@ else if (chosen == "Pollution")
 			MarkACountry(geocoder, "Mongolia")
 			
 		}
-else if (chosen == "LackofEnergy") 
-{
+                else if (chosen == "LackofEnergy") 
 			
 			clearOverlays();
 			
@@ -240,9 +243,7 @@ else if (chosen == "LackofEnergy")
 			MarkACountry(geocoder, "Ethiopia")
 			
 		}
-
-else if(chosen == "WaterPollution")
- {
+                else if(chosen == "WaterPollution")
 			
 			clearOverlays();
 			
@@ -287,9 +288,7 @@ else if(chosen == "WaterPollution")
 			
 			MarkACountry(geocoder, "Afghanistan") 
 		}
-
-else if (chosen == "Desertification") 
-{
+                else if (chosen == "Desertification") 
 			
 			clearOverlays();
 			
@@ -304,9 +303,7 @@ else if (chosen == "Desertification")
 			MarkACountry(geocoder, "Djibouti")
 			
 		}
-
-else if (chosen == "SoilDegradation") 
-{
+                else if (chosen == "SoilDegradation") 
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Ethiopia")
@@ -327,7 +324,7 @@ else if (chosen == "SoilDegradation")
 			MarkACountry(geocoder, "Macau")
 			
 			
-MarkACountry(geocoder, "United Kingdom")
+                        MarkACountry(geocoder, "United Kingdom")
 		 	
 			MarkACountry(geocoder, "Belgium")
 			
@@ -342,9 +339,7 @@ MarkACountry(geocoder, "United Kingdom")
 			MarkACountry(geocoder, "Armenia")
 			
 		}
-
-else if (chosen == "AirPollution")
- {
+                else if (chosen == "AirPollution")
 			
 			clearOverlays();
 			
@@ -382,9 +377,7 @@ else if (chosen == "AirPollution")
 				     
 			
 		}
-
-else if (chosen == "FoodSafety") 
-{
+		else if (chosen == "FoodSafety") 
 		  	
 			clearOverlays();
 		  	
@@ -406,21 +399,22 @@ else if (chosen == "FoodSafety")
 			MarkACountry(geocoder, "Guadeloupe")
 			MarkACountry(geocoder, "Mexico")
 			
-		}else if (chosen == "PublicEducation") {
+		}
+		else if (chosen == "PublicEducation") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			
 			MarkACountry(geocoder, "Macau")
 		}
-else if (chosen == "WasteManagement") 
-{
+                else if (chosen == "WasteManagement") 
 			clearOverlays();
 			
 			var geocoder = new google.maps.geocoder();
 			MarkACountry(geocoder, "Monaco")
 			MarkACountry(geocoder, "Libya")
 			MarkACountry(geocoder, "Mongolia")
-		}else if (chosen == "GreenhouseGasEmissions") {
+		}
+		else if (chosen == "GreenhouseGasEmissions") {
 		        clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 			MarkACountry(geocoder, "Russia")
@@ -444,7 +438,7 @@ else if (chosen == "WasteManagement")
 			MarkACountry(geocoder, "Mexico")
 			
 		}
-else if (chosen == "Radiation"){
+                else if (chosen == "Radiation"){
 			
 			clearOverlays();
 			
@@ -461,8 +455,7 @@ else if (chosen == "Radiation"){
 			MarkACountry(geocoder, "Russia")
 			
 		}
-
-else if (chosen == "Traffic") {
+                else if (chosen == "Traffic") {
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
 		    	MarkACountry(geocoder, "Armenia")
@@ -480,8 +473,7 @@ else if (chosen == "Traffic") {
 			MarkACountry(geocoder, "Macau")
 			
 		}
-else if (chosen == "War") 
-{
+                else if (chosen == "War") 
                 	
 			clearOverlays();
                 	
@@ -493,8 +485,8 @@ else if (chosen == "War")
 			
 			MarkACountry(geocoder, "Afghanistan")
                 	
-		}else if (chosen == "ResourceExploitation") 
-{
+		}
+		else if (chosen == "ResourceExploitation") 
                 	
 			clearOverlays();
                  	
@@ -503,8 +495,7 @@ else if (chosen == "War")
 			MarkACountry(geocoder, "Congo")
 			
 		}
-else if (chosen == "BiologicalDiversity") 
-{
+                else if (chosen == "BiologicalDiversity") 
                 	clearOverlays();
                 	var geocoder = new google.maps.Geocoder();
                 	MarkACountry(geocoder, "Norway")
@@ -513,9 +504,7 @@ else if (chosen == "BiologicalDiversity")
 			MarkACountry(geocoder, "Congo")
 		 	
 		}
-
-else if (chosen == "Transportation")
- {
+                else if (chosen == "Transportation")
 			
 			clearOverlays();
 			
@@ -524,9 +513,7 @@ else if (chosen == "Transportation")
 			MarkACountry(geocoder, "Denmark")
                 	
 		}
-
-else if (chosen == "EnergyProduction")
-	{
+                else if (chosen == "EnergyProduction")
 		  	
 			clearOverlays();
 		  	
@@ -535,9 +522,7 @@ else if (chosen == "EnergyProduction")
 			MarkACountry(geocoder, "Denmark")
 			
 		}
-
-else if (chosen == "AcidRain") 
-{
+                else if (chosen == "AcidRain") 
 			
 			clearOverlays();
 			
@@ -545,8 +530,8 @@ else if (chosen == "AcidRain")
 			
 			MarkACountry(geocoder, "Sweden")
 		
-		}else if (chosen == "VehicleCongestion")
- {
+		}
+		else if (chosen == "VehicleCongestion")
 			
 			clearOverlays();
 			
@@ -555,20 +540,14 @@ else if (chosen == "AcidRain")
 			MarkACountry(geocoder, "Hong Kong")
 			
 		}
-
-else if (chosen == "EnvironmentalInequality")
- {
+                else if (chosen == "EnvironmentalInequality")
 			
 			clearOverlays();
 			
 			var geocoder = new google.maps.Geocoder();
 			
 			MarkACountry(geocoder, "Hong Kong")
-			}
-
-
-
-
+		}
 		else {
 		//	alert(chosen)
 		}
@@ -671,8 +650,8 @@ markersArray.push(marker);
 	essays['Finland'] = $.ajax({url: "Finland.html", async: false}).responseText;
 	essays['Taiwan'] = $.ajax({url: "Taiwan.html",async: false}).responseText;
 	essays['Guatemala'] = $.ajax({url: "Guatemala.html", async: false}).responseText;
-    essays['Afghanistan'] = $.ajax({url: "Afghanistan.html", async: false}).responseText;
-    essays['Guadeloupe'] = $.ajax({url: "Guadeloupe.html", async: false}).responseText;
+        essays['Afghanistan'] = $.ajax({url: "Afghanistan.html", async: false}).responseText;
+        essays['Guadeloupe'] = $.ajax({url: "Guadeloupe.html", async: false}).responseText;
 	essays['India'] = $.ajax({url: "India.html", async: false}).responseText;
     
 </script> 
