@@ -1,5 +1,4 @@
-
-﻿<!DOCTYPE html> 
+<!DOCTYPE html> 
 <html> 
   <head> 
     <meta charset="utf-8"> 
@@ -337,7 +336,8 @@ var countryEssay = "No essay yet";
 			
 		}
 
-		else if (chosen == "AirPollution"){
+		else if (chosen == "AirPollution")
+ 		{
 			
 			clearOverlays();
 			var geocoder = new google.maps.Geocoder();
@@ -535,185 +535,6 @@ var countryEssay = "No essay yet";
 			
 			var geocoder = new google.maps.Geocoder();
 			
-
-			MarkACountry(geocoder, "Hong Kong")
-			
-			MarkACountry(geocoder, "Switzerland")
-			
-			MarkACountry(geocoder, "Afghanistan")
-				     
-			
-		}
-		else if (chosen == "FoodSafety"){
-		  	
-			clearOverlays();
-		  	
-			var geocoder = new google.maps.Geocoder();
-		  	
-			MarkACountry(geocoder, "Germany")
-			
-			MarkACountry(geocoder, "Nigeria")
-			MarkACountry(geocoder, "Australia")
-			MarkACountry(geocoder, "Sri Lanka")
-			MarkACountry(geocoder, "Taiwan")
-			MarkACountry(geocoder, "Ethiopia")
-                        MarkACountry(geocoder, "Congo")
-			
-			MarkACountry(geocoder, "Macau")
-			
-			MarkACountry(geocoder, "Belgium")
-			
-			MarkACountry(geocoder, "Guadeloupe")
-			MarkACountry(geocoder, "Mexico")
-			
-		}
-		else if (chosen == "PublicEducation") {
-			clearOverlays();
-			var geocoder = new google.maps.Geocoder();
-			
-			MarkACountry(geocoder, "Macau")
-		}
-                else if (chosen == "WasteManagement"){
-			clearOverlays();
-			
-			var geocoder = new google.maps.geocoder();
-			MarkACountry(geocoder, "Monaco")
-			MarkACountry(geocoder, "Libya")
-			MarkACountry(geocoder, "Mongolia")
-		}
-		else if (chosen == "GreenhouseGasEmissions") {
-		        clearOverlays();
-			var geocoder = new google.maps.Geocoder();
-			MarkACountry(geocoder, "Russia")
-			
-			MarkACountry(geocoder, "Nigeria")
-			
-			MarkACountry(geocoder, "Australia")
-			
-			MarkACountry(geocoder, "Sri Lanka")
-			
-			MarkACountry(geocoder, "Taiwan")
-			
-			MarkACountry(geocoder, "Ethiopia")
-                        
-			MarkACountry(geocoder, "Congo")
-			
-			MarkACountry(geocoder, "Macau")
-			
-			MarkACountry(geocoder, "Guadeloupe")
-			
-			MarkACountry(geocoder, "Mexico")
-			
-		}
-                else if (chosen == "Radiation"){
-			
-			clearOverlays();
-			
-			var geocoder = new google.maps.Geocoder();
-			
-			MarkACountry(geocoder, "Norway")
-			
-			MarkACountry (geocoder, "Guatemala")
-			
-			MarkACountry(geocoder, "Germany")
-			
-			MarkACountry(geocoder, "Armenia")
-			
-			MarkACountry(geocoder, "Russia")
-			
-		}
-                else if (chosen == "Traffic") {
-			clearOverlays();
-			var geocoder = new google.maps.Geocoder();
-		    	MarkACountry(geocoder, "Armenia")
-		        
-			MarkACountry(geocoder, "Israel")
-		        
-			MarkACountry(geocoded, "United Kingdom")
-			
-			MarkACountry(geocoded, "India")
-			
-			MarkACountry(geocoder, "Bulgaria")
-		 	
-			MarkACountry(geocoder, "Belgium")
-			
-			MarkACountry(geocoder, "Macau")
-			
-		}
-                else if (chosen == "War") 
-                	
-			clearOverlays();
-                	
-			var geocoder = new google.maps.Geocoder();
-                	
-			MarkACountry(geocoder, "Congo")
-			
-			MarkACountry(geocoder, "Laos")
-			
-			MarkACountry(geocoder, "Afghanistan")
-                	
-		}
-		else if (chosen == "ResourceExploitation") 
-                	
-			clearOverlays();
-                 	
-			var geocoder = new google.maps.Geocoder();
-                	
-			MarkACountry(geocoder, "Congo")
-			
-		}
-                else if (chosen == "BiologicalDiversity") 
-                	clearOverlays();
-                	var geocoder = new google.maps.Geocoder();
-                	MarkACountry(geocoder, "Norway")
-			MarkACountry(geocoder, "Myanmar")
-                	
-			MarkACountry(geocoder, "Congo")
-		 	
-		}
-                else if (chosen == "Transportation")
-			
-			clearOverlays();
-			
-			var geocoder = new google.maps.Geocoder();
-			
-			MarkACountry(geocoder, "Denmark")
-                	
-		}
-                else if (chosen == "EnergyProduction")
-		  	
-			clearOverlays();
-		  	
-			var geocoder = new google.maps.Geocoder();
-		  
-			MarkACountry(geocoder, "Denmark")
-			
-		}
-                else if (chosen == "AcidRain") 
-			
-			clearOverlays();
-			
-			var geocoder = new google.maps.Geocoder();
-			
-			MarkACountry(geocoder, "Sweden")
-		
-		}
-		else if (chosen == "VehicleCongestion")
-			
-			clearOverlays();
-			
-			var geocoder = new google.maps.Geocoder();
-			
-			MarkACountry(geocoder, "Hong Kong")
-			
-		}
-                else if (chosen == "EnvironmentalInequality")
-			
-			clearOverlays();
-			
-			var geocoder = new google.maps.Geocoder();
-			
-			MarkACountry(geocoder, "Hong Kong")
 			MarkACountry(geocoder, "Austria")
 			}		
 		else {
@@ -761,9 +582,9 @@ markersArray.push(marker);
 	Click on a country to see a description of the top issues in that country. <br>
 	You can also click on one of the environmental issues below to see the countries where that issue is in the top three.<BR>
 		This map is a class project by the "ICS 5: Environmental Issues in Information Technology" undergraduate course at <a href = "http://www.uci.edu">UCI</a>.  </p> 
-
+    <div class="container">
+      <div class="form">
 	 <FORM NAME = f1>
-		<center>
 	<Input type = radio Name = r1 Value = "Population" onClick =GetSelectedItem()>Population<BR>
 	<Input type = radio Name = r1 Value = "ClimateChange" onClick =GetSelectedItem()>Climate Change<BR>
 	<Input type = radio Name = r1 Value = "SeaLevelRise" onClick =GetSelectedItem()>Sea Level Rise<BR>
@@ -788,53 +609,57 @@ markersArray.push(marker);
 	<Input type = radio Name = r1 Value = "AcidRain" onClick =GetSelectedItem()>Acid Rain<BR>
 	<Input type = radio Name = r1 Value = "VehicleCongestion" onClick =GetSelectedItem()>Vehicle Congestion<BR>
 	<Input type = radio Name = r1 Value = "EnvironmentalInequality" onClick =GetSelectedItem()>Environmental Inequality<BR>
-
-
+ 	<Input type = radio Name = r1 Value = "EndangeredSpecies" onClick =GetSelectedItem()>Endangered Species<BR>
 	Other environmental issues will go here.
-	</center>
-	</form>
+	
     <div id="map_canvas"></div> 
   </body> 
 </html> 
 
 <script>
 
-        essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
-        essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
-        essays['Israel'] = $.ajax({url: "Israel.html", async: false}).responseText
-        essays['Laos'] = $.ajax({url: "Laos.html", async: false}).responseText
-        essays['Sweden'] = $.ajax({url: "Sweden.html", async: false}).responseText;
-	essays['Guyana'] = $.ajax({url: "Guyana.html", async: false}).responseText;
-	essays['South Africa'] = $.ajax({url: "SouthAfrica.html", async: false}).responseText;
-	essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
-	essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
-	essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
-	essays['Russia'] = $.ajax({url: "Russia.html.html", async: false}).responseText;
-	essays['Belgium'] = $.ajax({url: "Belgium.html", async: false}].responseText;
-	essays['Honduras'] = $.ajax({url: "Honduras.html",async: false}].responseText;
-	essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
-	essays['Malaysia'] = $.ajax({url: "Malaysia.html", async: false}).responseText;
-	essays['Nigeria'] = $.ajax({url: "Nigeria.html", async: false}).responseText;
-	essays['Netherlands'] = $.ajax({url: "Netherlands.html", async: false}).responseText;
-	essays['Denmark'] = $.ajax({url: "Denmark.html", async: false}).responseText;
-	essays['Israel'] = $.ajax({url: "Israel.html", async: false}).responseText;
-	essays['Hong Kong'] = $.ajax({url: "HongKong.html", async: false}).responseText;
-	essays['Switzerland'] = $.ajax({url: "Switzerland.html", async: false}).responseText;
-	essays['Djibouti'] = $.ajax({url: "djibouti.html",async: false}).responseText; 
-	essays['Monaco'] = $.ajax({url: "Monaco.html", async: false}).responseText;	
-	essays['Finland'] = $.ajax({url: "Finland.html", async: false}).responseText;
-	essays['Taiwan'] = $.ajax({url: "Taiwan.html",async: false}).responseText;
-	essays['Saudi Arabia'] = $.ajax({url: "SaudiArabia.html",async: false}).responseText;
-	essays['Guatemala'] = $.ajax({url: "Guatemala.html", async: false}).responseText;
-	essays['Pakistan'] = $.ajax({url: "Pakistan.html", async: false}).responseText;
-        essays['Afghanistan'] = $.ajax({url: "Afghanistan.html", async: false}).responseText;
-        essays['Ghana'] = $.ajax({url: "ghana2.html", async: false}).responseText;
-        essays['Armenia'] = $.ajax({url:“Armenia.html”, async: false}).responseText;
-        essays['Guadeloupe'] = $.ajax({url: "Guadeloupe.html", async: false}).responseText;
-	essays['India'] = $.ajax({url: "India.html", async: false}).responseText;
-	essays['France'] = $.ajax({url: "france.html", async: false}).responseText;
-        essays['Germany'] = $.ajax({url: "Germany.html", async: false}).responseText;
-    
+essays['Norway'] = $ajax({url: "norway.html", async: false}).responseText;
+essays['Haiti'] = $.ajax({url: "haiti.html", async: false}).responseText;
+essays['Ecuador'] = $.ajax({url: "Ecuador.html", async: false}).responseText;
+essays['NewZealand'] = $.ajax({url: "NewZealand.html",async: false}).responseText;
+essays['Macau'] = $.ajax({url: "Macau.html",async: false}).responseText;
+essays['Belgium'] = $.ajax({url: "Belgium.html",async: false}).responseText;
+essays['Honduras'] = $.ajax({url: "Honduras.html",async: false}).responseText;
+essays['Nigeria'] = $.ajax({url: "Nigeria.html", async: false}).responseText;
+essays['Israel'] = $.ajax({url: "Israel.html", async: false}).responseText
+essays['Laos'] = $.ajax({url: "Laos.html", async: false}).responseText
+essays['Sweden'] = $.ajax({url: "Sweden.html", async: false}).responseText;
+essays['Guyana'] = $.ajax({url: "Guyana.html", async: false}).responseText;
+essays['South Africa'] = $.ajax({url: "SouthAfrica.html", async: false}).responseText;
+essays['Russia'] = $.ajax({url: "Russia.html.html", async: false}).responseText;
+essays['Malaysia'] = $.ajax({url: "Malaysia.html", async: false}).responseText;
+essays['Netherlands'] = $.ajax({url: "Netherlands.html", async: false}).responseText;
+essays['Denmark'] = $.ajax({url: "Denmark.html", async: false}).responseText;
+essays['Israel'] = $.ajax({url: "Israel.html", async: false}).responseText;
+essays['Hong Kong'] = $.ajax({url: "HongKong.html", async: false}).responseText;
+essays['Switzerland'] = $.ajax({url: "Switzerland.html", async: false}).responseText;
+essays['Djibouti'] = $.ajax({url: "djibouti.html",async: false}).responseText; 
+essays['Monaco'] = $.ajax({url: "Monaco.html", async: false}).responseText;	
+essays['Finland'] = $.ajax({url: "Finland.html", async: false}).responseText;
+essays['Taiwan'] = $.ajax({url: "Taiwan.html",async: false}).responseText;
+essays['Saudi Arabia'] = $.ajax({url: "SaudiArabia.html",async: false}).responseText;
+essays['Guatemala'] = $.ajax({url: "Guatemala.html", async: false}).responseText;
+essays['Pakistan'] = $.ajax({url: "Pakistan.html", async: false}).responseText;
+essays['Afghanistan'] = $.ajax({url: "Afghanistan.html", async: false}).responseText;
+essays['Ghana'] = $.ajax({url: "ghana2.html", async: false}).responseText;
+essays['Armenia'] = $.ajax({url: "Armenia.html", async: false}).responseText;
+essays['Guadeloupe'] = $.ajax({url: "Guadeloupe.html", async: false}).responseText;
+essays['India'] = $.ajax({url: "India.html", async: false}).responseText;
+ssays['France'] = $.ajax({url: "france.html", async: false}).responseText;
+essays['Germany'] = $.ajax({url: "Germany.html", async: false}).responseText;
+essays['Austria'] = $.ajax({url: "Austria.html", async: false}).responseText; 
+essays['Congo'] = $.ajax({url: "Congo.html",async: false}).responseText;
+essays['Libya'] = $.ajax({url: "Libya.html",async: false}).responseText;
+essays['United Kingdom'] = $.ajax({url: "UnitedKingdom.html",async: false}).responseText;
+essays['UAE'] = $.ajax({url: "UAE.html",async: false}).responseText;
+essays['Myanmar'] = $.ajax({url: "Myanmar.html",async: false}).responseText
+essays['Bermuda'] = $.ajax({url: "Bermuda.html",async: false}).responseText;
+
 
 </script> 
 
